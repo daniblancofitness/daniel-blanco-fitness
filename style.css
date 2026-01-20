@@ -402,3 +402,46 @@ h1{
   .grid--pricing{ grid-template-columns: 1fr; }
   .kpis{ grid-template-columns: 1fr; }
 }
+/* ===== WhatsApp flotante ===== */
+.wa-float{
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 9999;
+  background: #111;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: .2px;
+  box-shadow: 0 14px 30px rgba(0,0,0,.22);
+  border: 1px solid rgba(255,255,255,.14);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wa-float:hover{
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+@media (min-width: 980px){
+  .wa-float{ bottom: 22px; right: 22px; }
+}
+/* ===== Alinear contenido de precios ===== */
+.price{
+  display: flex;
+  flex-direction: column;
+}
+
+.price__list{
+  flex: 1;              /* hace que la lista ocupe el espacio disponible */
+}
+
+.price .btn{
+  margin-top: auto;     /* empuja el botón al fondo */
+}
