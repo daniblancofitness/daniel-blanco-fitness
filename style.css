@@ -887,3 +887,15 @@ h1{
   .grid--pricing{ grid-template-columns: 1fr; }
   .kpis{ grid-template-columns: 1fr; }
 }
+.lang-switch{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(47,51,61,.22);
+  font-weight: 900;
+  letter-spacing: .2px;
+  background: rgba(255,255,255,.75);
+}
+.lang-switch:hover{ text-decoration: none; filter: brightness(1.02); }
